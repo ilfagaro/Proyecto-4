@@ -2,13 +2,13 @@
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import FormHome from './form/FormHome'
-import TableHome from './table/TableHome'
+import FormHome from '../../components/form/FormHome'
 import '../home/home.css'
-import Footer from './footer/Footer'
+import Footer from '../../components/footer/Footer'
 import { MdLogout } from "react-icons/md";
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router';
+import TableHome from '../../components/table/TableHome'
 
 
 

@@ -1,9 +1,9 @@
 
 import Table from 'react-bootstrap/Table';
 import './table.css'
-import TableRow from './TableRow';
+import TableRow from '../tableRow/TableRow';
 import Container from 'react-bootstrap/Container'
-import UserService from '../../../service/userService';
+import UserService from '../../service/userService';
 import { useState, useEffect } from 'react';
 
 
@@ -40,7 +40,7 @@ function TableHome () {
         </thead>
         <tbody>
         {userList.map((user) => (
-              <TableRow user={user} onChange={handleChildChange} />))}   
+              <TableRow key={user.id} user={user} onChange={handleChildChange} />))}   
         </tbody>
         </Table>
       </div>

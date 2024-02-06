@@ -1,5 +1,5 @@
-import '../table/tableRow.css'
-import UserService from '../../../service/userService';
+import './tableRow.css'
+import UserService from '../../service/userService';
 
 
 

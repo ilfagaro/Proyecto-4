@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './form.css'
-import UserService from '../../../service/userService';
+import UserService from '../../service/userService';
 import Swal from 'sweetalert2'
 
 export default function FormHome () {
