@@ -1,0 +1,10 @@
+.buttonDelete{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #022332;
+    background-image: url('/src/images/papelera.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
