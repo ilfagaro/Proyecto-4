@@ -1,13 +1,3 @@
 {
-  "user": [
-    {
-      "id": "3069",
-      "name": "yamila",
-      "surname": "eeee",
-      "secondSurname": "eeeeee",
-      "email": "solayro_95@hotmail.com",
-      "phone": "rrrr",
-      "curso": "rrrrrr"
-    }
-  ]
+  "user": []
 }
