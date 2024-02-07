@@ -15,42 +15,42 @@ import TableHome from '../../components/table/TableHome'
 function Home() {
   const navigate = useNavigate();
 
-  const handleGoIndex = ()=>{
+  const handleGoIndex = () => {
     navigate("/");
   }
-    return (
-      <div className='contentHome'>
-        <Container>
+  return (
+    <div className='contentHome'>
+      <Container>
         <Container className='d-flex flex-column align-items-end'>
           <Col>
-          <Button
+            <Button
               variant="text"
-              endIcon={<MdLogout size={35}  />}
-              style={{ textTransform: 'none', marginRight: 'auto', color : 'black' }}
-              onClick = {handleGoIndex}>
+              endIcon={<MdLogout size={35} />}
+              style={{ textTransform: 'none', marginRight: 'auto', color: 'black' }}
+              onClick={handleGoIndex}>
               Logout
-              
-          </Button>
+
+            </Button>
           </Col>
         </Container>
         <Row >
-        <Col className='d-flex justify-content-center '>
-          <img className="logoPrincipal" 
+          <Col className='d-flex justify-content-center '>
+            <img className="logoPrincipal"
               src="/src/images/logo.png" />
           </Col>
         </Row>
-        </Container>
+      </Container>
 
-        <Container>
-          <Row>
-            <Col md={12}>
-              <FormHome />
-            </Col>
-          </Row>
-          <TableHome />
-          <Footer />
-        </Container>
-      </div>
-    );
-  }
+      <Container>
+        <Row>
+          <Col md={12}>
+            <FormHome />
+          </Col>
+        </Row>
+        <TableHome />
+        <Footer />
+      </Container>
+    </div>
+  );
+}
 export default Home
