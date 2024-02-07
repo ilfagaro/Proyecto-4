@@ -48,7 +48,7 @@ function Home() {
           </Col>
         </Row>
         <TableHome />
-        <button className='mt-2 mx-auto btnAccess' onClick={() => navigate('/lottery')}>
+        <button className='mt-3 mx-auto btnAccesslottery' onClick={() => navigate('/lottery')}>
   Accede al Sorteo !!
 </button>
 

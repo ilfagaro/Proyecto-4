@@ -1,3 +1,6 @@
+import '/'
+
+
 <div className='contentHome'>
       <Container>
         <Container className='d-flex flex-column align-items-end'>
