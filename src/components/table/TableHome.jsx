@@ -6,8 +6,8 @@ import Container from 'react-bootstrap/Container'
 import UserService from '../../service/userService';
 import { useState, useEffect } from 'react';
 
-
-function TableHome () {
+//Aqui se pasa la propiedad showDeleteButton al componente padre 
+function TableHome ({showDeleteButton}) {
   const [userList, setUserList] = useState([]);
 
   const getUserlist = async () => {
@@ -38,9 +38,10 @@ function TableHome () {
             <th></th>
           </tr>  
         </thead>
+
         <tbody>
         {userList.map((user) => (
-              <TableRow key={user.id} user={user} onChange={handleChildChange} />))}   
+              <TableRow key={user.id} user={user} onChange={handleChildChange} showDeleteButton={showDeleteButton}/>))}   
         </tbody>
         </Table>
       </div>

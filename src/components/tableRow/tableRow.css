@@ -8,3 +8,12 @@
     background-size: cover;
     
 }
+.buttonAdd{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #022332;
+    background-image: url('/src/images/addButton.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
