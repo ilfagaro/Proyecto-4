@@ -47,7 +47,7 @@ function Home() {
             <FormHome />
           </Col>
         </Row>
-        <TableHome showDeleteButton={showDeleteButton} />
+        <TableHome showDeleteButton={true} />
         <Footer />
       </Container>
     </div>
