@@ -8,7 +8,7 @@ function Lottery() {
     return (
         <div className='contentHome'>
             <h1>Header</h1>
-            <TableHome />
+            <TableHome showDeleteButton={false} />
             <Footer />
 
         </div>

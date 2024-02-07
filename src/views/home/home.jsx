@@ -47,7 +47,7 @@ function Home() {
             <FormHome />
           </Col>
         </Row>
-        <TableHome />
+        <TableHome showDeleteButton={true} />
         <button className='mt-2 mx-auto btnAccess' onClick={() => navigate('/lottery')}>
   Accede al Sorteo !!
 </button>

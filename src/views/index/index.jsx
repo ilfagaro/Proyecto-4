@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import './index.css';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
