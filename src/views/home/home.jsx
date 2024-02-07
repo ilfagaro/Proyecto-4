@@ -48,9 +48,14 @@ function Home() {
           </Col>
         </Row>
         <TableHome />
+        <button className='mt-2 mx-auto btnAccess' onClick={() => navigate('/lottery')}>
+  Accede al Sorteo !!
+</button>
+
         <Footer />
       </Container>
     </div>
+
   );
 }
 export default Home
