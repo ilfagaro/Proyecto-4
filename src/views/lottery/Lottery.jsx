@@ -6,11 +6,10 @@ import TableHome from '../../components/table/TableHome';
 function Lottery() {
     
     return (
-        <div className='contentHome'>
+        <div >
             <h1>Header</h1>
             <TableHome showDeleteButton={false} />
             <Footer />
-
         </div>
 
     );
