@@ -4,7 +4,7 @@ import UserService from '../../service/userService';
 
 //se añade la propiedad showDeleteButton al componente table
 
-function TableRow({ user, onChange, showDeleteButton }) {
+function TableRow({ user, onChange, showDeleteButton, onAddUser }) {
 
     const handleDelete = () => {
         UserService.deleteUser(user);
@@ -25,7 +25,7 @@ function TableRow({ user, onChange, showDeleteButton }) {
                 <td><button className="buttonDelete" onClick={handleDelete} ></button></td>
             ) : (
                 <td>
-                    <button type="submit" className="buttonAdd">
+                    <button type="submit" className="buttonAdd" onClick={() => onAddUser(user)}>
                         <img src="/src/images/addButton.svg" />
                     </button>
                 </td>

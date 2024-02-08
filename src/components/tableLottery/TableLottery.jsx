@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 
 
 
-function TableLottery() {
+function TableLottery({lotteryUser, startLottery}) {
     return (
         <Container>
             <div className='tableLottery p-3'>
@@ -33,12 +33,12 @@ function TableLottery() {
             <div className="card-container">
                 <Card className="main-card">
                     <Card.Body className="card-body">
-                        <Button className="button-start-lottery">Comenzar sorteo</Button>
+                        <Button className="button-start-lottery" onclick={startLottery}>Comenzar sorteo</Button>
                         <Card.Text className="card-text">
                             ¡y el ganador/a es..!
                         </Card.Text>
                         <Card className="inner-card">
-                           <p className='winner-name-container'>Alejandro</p>
+                           <p className='winner-name-container'>{lotteryUser}</p>
                         </Card>
                     </Card.Body>
                 </Card>
