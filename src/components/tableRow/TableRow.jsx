@@ -2,14 +2,14 @@ import './tableRow.css'
 import UserService from '../../service/userService';
 
 
+//se añade la propiedad showDeleteButton al componente table
 
-function TableRow ({user, onChange}){
+function TableRow ({user, onChange, showDeleteButton}){
 
     const handleDelete= ()=>{
         UserService.deleteUser(user);
         onChange("Nuevo valor");
     }
-
 
     return (
         <tr>
@@ -19,7 +19,14 @@ function TableRow ({user, onChange}){
             <td>{user.email}</td>
             <td>{user.phone}</td>
             <td>{user.curso}</td>
-            <td><button className="buttonDelete" onClick={handleDelete} ></button></td>
+            {/*Se pone una props showDeleteButton que dice si esta a true muestra boton de borrar y si esta a false muestra boton 
+            de agregar */}
+            {showDeleteButton ? (
+                <td><button className="buttonDelete" onClick={handleDelete} ></button></td>
+            ) :(
+                <td><button className='buttonAdd'></button>
+                </td>
+            ) };
         </tr>
     )
     

@@ -1,4 +1,9 @@
-
+body{
+  background-image: url('/src/images/imagen-fondo-home.png');    
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
 /*:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -24,7 +29,7 @@ a:hover {
 }
 
 body {
-  margin: 0;
+
   display: flex;
   place-items: center;
   min-width: 320px;

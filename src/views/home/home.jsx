@@ -19,7 +19,7 @@ function Home() {
     navigate("/");
   }
   return (
-    <div className='contentHome'>
+    <div>
       <Container>
         <Container className='d-flex flex-column align-items-end'>
           <Col>
@@ -47,13 +47,14 @@ function Home() {
             <FormHome />
           </Col>
         </Row>
-        <TableHome />
-        <button className='mt-3 mx-auto btnAccesslottery' onClick={() => navigate('/lottery')}>
-  Accede al Sorteo !!
-</button>
-
-        <Footer />
+        <TableHome showDeleteButton={true} />
+        <button 
+            className='mt-2 mx-auto btnAccess' 
+            onClick={() => navigate('/lottery')}>
+              Accede al Sorteo !!
+        </button>
       </Container>
+      <Footer />
     </div>
 
   );

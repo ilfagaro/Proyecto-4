@@ -1,4 +1,4 @@
-import React from 'react';
+import {useState} from 'react';
 import './index.css';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
@@ -7,9 +7,28 @@ import { useNavigate } from 'react-router';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
+// Llamamos a useState para controlar la validación del formulario y usamos 2 estados.
+// el form lo pasamos a una variable y utilizamos condicionales:
+// -si NO es válido, cancela las acciones por defecto del form: recargar page, etc.
+// -Si no es el caso, pues navega a la pagina '/home' haciendo uso de use.Navigate guardado en la variable 'navigate'. Finalmente marcar el form como Válido.
+// Form.control.feedback -son mensajes de error que se muestran si los campos del form no son válidos.
+
 
 function Index() {
   const navigate = useNavigate();
+  const [validated, setValidated] = useState(false);
+
+  const handleSubmit = (e)=> {
+    const form = e.currentTarget;
+    if (form.checkValidity() === false){
+      e.preventDefault();
+      e.stopPropagation();
+    } else {
+      navigate ('/home');
+    }
+    setValidated(true);
+  }
+
   return (
     <div className="content">
       <Container className='d-flex justify-content-center '>
@@ -19,19 +38,33 @@ function Index() {
           
           <Col md={10} xs={11} lg={11} >
             <Col className='d-flex justify-content-center'>
-              <Form className='w-75'>
+              <Form className='w-75' noValidate validated={validated} onSubmit={handleSubmit}>
 
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label className='text-white' >Email address</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" />
+                <Form.Group className="mb-3" controlId="formBasicEmail validationCustomEmail">
+                  <Form.Label className='text-white' id='email'>Email address</Form.Label>
+                  <Form.Control 
+                  hasValidation 
+                  required 
+                  type="email" 
+                  placeholder="Enter email" 
+                  aria-describedby='email' />
+                  <Form.Control.Feedback type="invalid">
+                    Please choose a email address.
+                  </Form.Control.Feedback>
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Group className="mb-3" controlId="formBasicPassword validationCustomPassword">
                   <Form.Label className='text-white'>Password</Form.Label>
-                  <Form.Control className='mb-5' type="password" placeholder="Password" />
+                  <Form.Control  
+                  required 
+                  type="password" 
+                  placeholder="Password" />
+                  <Form.Control.Feedback type="invalid">
+                    Please provide a password.
+                  </Form.Control.Feedback>
                 </Form.Group>
 
-                <button className='mt-2 btnAccess' onClick={() => navigate('/home')}>Acceso</button>
+                <Button className='mt-4 btnAccess' type="submit" >Acceso</Button>
 
               </Form>
             </Col>
