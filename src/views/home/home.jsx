@@ -8,7 +8,8 @@ import Footer from '../../components/footer/Footer'
 import { MdLogout } from "react-icons/md";
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router';
-import TableHome from '../../components/table/TableHome'
+import TableHome from '../../components/tableHome/TableHome'
+
 
 
 

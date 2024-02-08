@@ -1,3 +1,31 @@
 {
-  "user": []
+  "user": [
+    {
+      "id": "10bd",
+      "name": "Clara",
+      "surname": "Ruiz-Santacruz",
+      "secondSurname": "Jiménez",
+      "email": "claritarsj@gmail.com",
+      "phone": "689223797",
+      "curso": "bgrh"
+    },
+    {
+      "id": "a49b",
+      "name": "Clara",
+      "surname": "Ruiz-Santacruz",
+      "secondSurname": "Jiménez",
+      "email": "claritarsj@gmail.com",
+      "phone": "689223797",
+      "curso": "cve"
+    },
+    {
+      "id": "8b2c",
+      "name": "Clara",
+      "surname": "Ruiz-Santacruz",
+      "secondSurname": "Jiménez",
+      "email": "claritarsj@gmail.com",
+      "phone": "689223797",
+      "curso": "fwef"
+    }
+  ]
 }
