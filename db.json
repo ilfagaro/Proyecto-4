@@ -1,6 +1,7 @@
 {
   "user": [
     {
+<<<<<<< HEAD
       "id": "10bd",
       "name": "Clara",
       "surname": "Ruiz-Santacruz",
@@ -26,6 +27,33 @@
       "email": "claritarsj@gmail.com",
       "phone": "689223797",
       "curso": "fwef"
+=======
+      "id": "fd77",
+      "name": "yamila",
+      "surname": "eeee",
+      "secondSurname": "eeeeee",
+      "email": "solayro_95@hotmail.com",
+      "phone": "rrrr",
+      "curso": "rrrrrr"
+    },
+    {
+      "id": "89ca",
+      "name": "Ilda Fabiana",
+      "surname": "vv",
+      "secondSurname": "Gaona Rotela",
+      "email": "ildafabianagaonarotela@gmail.com",
+      "phone": "602409737",
+      "curso": "2"
+    },
+    {
+      "id": "54a9",
+      "name": "Ilda Fabiana",
+      "surname": "vv",
+      "secondSurname": "Gaona Rotela",
+      "email": "ildafabianagaonarotela@gmail.com",
+      "phone": "602409737",
+      "curso": "4"
+>>>>>>> 0685f62dec8e6303f8ce02e6bc38f57b2bb9d765
     }
   ]
 }
