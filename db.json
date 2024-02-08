@@ -1,3 +1,31 @@
 {
-  "user": []
+  "user": [
+    {
+      "id": "fd77",
+      "name": "yamila",
+      "surname": "eeee",
+      "secondSurname": "eeeeee",
+      "email": "solayro_95@hotmail.com",
+      "phone": "rrrr",
+      "curso": "rrrrrr"
+    },
+    {
+      "id": "89ca",
+      "name": "Ilda Fabiana",
+      "surname": "vv",
+      "secondSurname": "Gaona Rotela",
+      "email": "ildafabianagaonarotela@gmail.com",
+      "phone": "602409737",
+      "curso": "2"
+    },
+    {
+      "id": "54a9",
+      "name": "Ilda Fabiana",
+      "surname": "vv",
+      "secondSurname": "Gaona Rotela",
+      "email": "ildafabianagaonarotela@gmail.com",
+      "phone": "602409737",
+      "curso": "4"
+    }
+  ]
 }

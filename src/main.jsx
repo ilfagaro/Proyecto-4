@@ -15,6 +15,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/lottery" element={<Lottery />} />
       </Routes>
     </BrowserRouter>
-  
   </React.StrictMode>,
 )
