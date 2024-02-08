@@ -1,3 +1,58 @@
 {
-  "user": []
+  "user": [
+    {
+      "id": "5cc0",
+      "name": "",
+      "surname": "",
+      "secondSurname": "",
+      "email": "",
+      "phone": "",
+      "curso": ""
+    },
+    {
+      "id": "ff50",
+      "name": "",
+      "surname": "",
+      "secondSurname": "",
+      "email": "",
+      "phone": "",
+      "curso": ""
+    },
+    {
+      "id": "ddec",
+      "name": "",
+      "surname": "",
+      "secondSurname": "",
+      "email": "",
+      "phone": "",
+      "curso": ""
+    },
+    {
+      "id": "42e0",
+      "name": "",
+      "surname": "",
+      "secondSurname": "",
+      "email": "",
+      "phone": "",
+      "curso": ""
+    },
+    {
+      "id": "150f",
+      "name": "",
+      "surname": "",
+      "secondSurname": "",
+      "email": "",
+      "phone": "",
+      "curso": ""
+    },
+    {
+      "id": "89a3",
+      "name": "",
+      "surname": "a",
+      "secondSurname": "",
+      "email": "",
+      "phone": "",
+      "curso": ""
+    }
+  ]
 }
