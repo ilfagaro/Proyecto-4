@@ -38,6 +38,7 @@ function Home() {
             <img className="logoPrincipal"
               src="/src/images/logo.png" />
           </Col>
+          <p>HOLA</p>
         </Row>
       </Container>
 
