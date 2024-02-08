@@ -14,7 +14,7 @@ function Home() {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div  className='contentView2'>
       <Header />
       <Container>
         <Row>
