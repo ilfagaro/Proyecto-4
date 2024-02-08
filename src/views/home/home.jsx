@@ -6,7 +6,7 @@ import FormHome from '../../components/form/FormHome'
 import '../home/home.css'
 import Footer from '../../components/footer/Footer'
 import { useNavigate } from 'react-router';
-import TableHome from '../../components/table/TableHome'
+import TableHome from '../../components/tableHome/TableHome'
 import Header from '../../components/header/Header'
 
 
