@@ -18,7 +18,7 @@ function TableHome ({showDeleteButton}) {
     getUserlist();
   }
 
-  useEffect(() => {
+  useEffect(()=> {
     getUserlist();
   },[]); 
   
