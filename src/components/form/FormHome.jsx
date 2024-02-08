@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./form.css";
 import UserService from "../../service/userService";
 import Swal from "sweetalert2";
@@ -26,7 +26,7 @@ export default function FormHome() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     const form = e.currentTarget;
     if (form.checkValidity() === false) {
       e.stopPropagation();
@@ -67,7 +67,7 @@ export default function FormHome() {
 
   return (
     <section className="formHome px-5 mt-4 gap-3">
-      <h1 class="fs-4 mb-4 fw-bold text-center p-3">SOMBRERO SELECCIONADOR</h1>
+      <h1 className="fs-4 mb-4 fw-bold text-center p-3">SOMBRERO SELECCIONADOR</h1>
       <Form
         className="w-75 row"
         noValidate
@@ -191,7 +191,7 @@ export default function FormHome() {
           </Form.Control.Feedback>
         </Form.Group>
 
-        <div class="col-xl-3 col-lg-6 col-sm-12">
+        <div className="col-xl-3 col-lg-6 col-sm-12">
           <Button
             className="buttonSend mt-4 mb-4 w-100 h-70"
             type="submit"

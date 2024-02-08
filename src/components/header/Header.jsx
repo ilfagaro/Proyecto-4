@@ -1,3 +1,20 @@
+import './header.css';
+import React from 'react';
+import Button from '@mui/material/Button';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { MdLogout } from "react-icons/md";
+import { useNavigate } from 'react-router';
+
+function Header() {
+
+  const handleGoIndex = () => {
+    navigate("/");
+  }
+
+  return(
+    <>
 <div className='contentHome'>
       <Container>
         <Container className='d-flex flex-column align-items-end'>
@@ -20,3 +37,9 @@
         </Row>
       </Container>
       </div>
+
+      </>
+   );
+}
+
+export default Header;
