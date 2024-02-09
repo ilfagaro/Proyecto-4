@@ -5,17 +5,17 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { MdLogout } from "react-icons/md";
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router'; //modificado.. //
 
 function Header() {
-
+const navigate = useNavigate()     //agregado //
   const handleGoIndex = () => {
+
     navigate("/");
   }
 
   return(
     <>
-<div className='contentHome'>
       <Container>
         <Container className='d-flex flex-column align-items-end'>
           <Col>
@@ -36,8 +36,6 @@ function Header() {
           </Col>
         </Row>
       </Container>
-      </div>
-
       </>
    );
 }

@@ -7,7 +7,7 @@ import UserService from '../../service/userService';
 import { useState, useEffect } from 'react';
 
 //Aqui se pasa la propiedad showDeleteButton al componente padre 
-function TableHome ({showDeleteButton}) {
+function TableHome ({onAddUser,showDeleteButton}) {
   const [userList, setUserList] = useState([]);
 
   const getUserlist = async () => {
@@ -41,7 +41,7 @@ function TableHome ({showDeleteButton}) {
 
         <tbody>
         {userList.map((user) => (
-              <TableRow key={user.id} user={user} onChange={handleChildChange} showDeleteButton={showDeleteButton}/>))}   
+              <TableRow key={user.id} user={user} onChange={handleChildChange} onAddUser={onAddUser} showDeleteButton={showDeleteButton}/>))}   
         </tbody>
         </Table>
       </div>

@@ -1,51 +1,53 @@
-import './lottery.css'
-import React from 'react';
-import Footer from '../../components/footer/Footer'
-import TableHome from '../../components/tableHome/TableHome';
-import TableLottery from '../../components/tableLottery/TableLottery';
-import { useState } from 'react';
+import "./lottery.css";
+import React from "react";
+import Footer from "../../components/footer/Footer";
+import TableHome from "../../components/tableHome/TableHome";
+import TableLottery from "../../components/tableLottery/TableLottery";
+import { useState } from "react";
+import Header from "../../components/header/Header";
+import Container from "react-bootstrap/Container";
+import Col from 'react-bootstrap/Col';
 
-function Lottery() {
+function Lottery({ showDeleteButton }) {
+  // Estado para almacenar los usuarios seleccionados para el sorteo
+  const [selectedUser, setSelectedUser] = useState([]);
 
-    // Estado para almacenar los usuarios seleccionados para el sorteo
-    const [selectedUser, setSelectedUser] = useState([]);
+  // Función para agregar un usuario al sorteo
+  const addUserToList = (lotteryUser) => {
+    setSelectedUser([...selectedUser, lotteryUser]);
+  };
 
-    // Función para agregar un usuario al sorteo
-    const addUserToList = (lotteryUser) => {
+  // Estado para almacenar al ganador del sorteo
+  const [winner, setWinner] = useState(null);
 
-        setSelectedUser([...selectedUser, lotteryUser])
+  // Función para iniciar el sorteo y seleccionar un usuario aleatorio
+  const startLottery = () => {
+    if (selectedUser.length > 0) {
+      const randomIndex = Math.floor(Math.random() * selectedUser.length);
+      const winnerUser = selectedUser[randomIndex];
+      setWinner(winnerUser);
+    } else {
+      alert("No hay usuarios seleccionados");
     }
+  };
 
-    // Estado para almacenar al ganador del sorteo
-    const [winner, setWinner] = useState(null);
+  return (
+    <div>
+      <Container className="mb-5">
+        <Col>
+          <Header />
+        </Col>
+      </Container>
 
-    // Función para iniciar el sorteo y seleccionar un usuario aleatorio
-    const startLottery = () => {
-
-        if (selectedUser.length > 0) {
-
-            const randomIndex = Math.floor(Math.random() * selectedUser.length);
-            const winnerUser = selectedUser[randomIndex];
-            setWinner(winnerUser);
-
-        } else {
-            alert('No hay usuarios seleccionados')
-        }
-
-    }
-
-
-
-
-    return (
-        <div >
-            <h1>Header</h1>
-            <TableHome onAddUser={addUserToList} showDeleteButton={false} />
-            <TableLottery lotteryUser={selectedUser} onStartLottery={startLottery} />
-            <Footer />
-        </div>
-
-    );
+      <TableHome onAddUser={addUserToList} 
+      showDeleteButton={false} />
+      <TableLottery
+        lotteryUser={selectedUser}
+        onStartLottery={startLottery}
+        showDeleteButton={false}/>
+      <Footer />
+    </div>
+  );
 }
 
 export default Lottery;
