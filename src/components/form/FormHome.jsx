@@ -38,6 +38,8 @@ export default function FormHome() {
     }
   };
 
+  
+
   return (
     <section className="px-5 formHome">
       <h1 class="fs-4 mb-4 fw-bold text-center p-3">SOMBRERO SELECCIONADOR</h1>
@@ -51,6 +53,8 @@ export default function FormHome() {
               <input
                 required
                 type="text"
+                pattern="[A-Za-z]+"
+                placeholder="Enter a Name"
                 class="form-control"
                 name="name"
                 id="inputName"
@@ -63,6 +67,8 @@ export default function FormHome() {
               <label class="fw-bold">Primer Apellido</label>
               <input
                 type="text"
+                pattern="[A-Za-z]+"
+                placeholder="Enter a Surname"
                 class="form-control"
                 name="surname"
                 value={formData.surname}
@@ -77,6 +83,8 @@ export default function FormHome() {
               </label>
               <input
                 type="text"
+                pattern="[A-Za-z]+"
+                placeholder="Enter a Second surname"
                 class="form-control"
                 name="secondSurname"
                 value={formData.secondSurname}
@@ -91,6 +99,8 @@ export default function FormHome() {
               </label>
               <input
                 type="email"
+                pattern=".+@gmail.com"
+                placeholder="Enter a gmail address"
                 class="form-control"
                 name="email"
                 id="inputEmail"
@@ -109,7 +119,9 @@ export default function FormHome() {
                   Teléfono
                 </label>
                 <input
-                  type="text"
+                  type="tel"
+                  pattern="[0-9]{9}"
+                  placeholder="Enter a Phone"
                   class="form-control"
                   name="phone"
                   value={formData.phone}
@@ -127,6 +139,7 @@ export default function FormHome() {
                 </label>
                 <input
                   type="text"
+                  placeholder="Enter a Course"
                   class="form-control"
                   name="curso"
                   value={formData.curso}
