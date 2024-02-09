@@ -71,6 +71,24 @@
       "email": "claritarsj@gmail.com",
       "phone": "689223797",
       "curso": "jkh"
+    },
+    {
+      "id": "b718",
+      "name": "dew",
+      "surname": "Ruiz-Santacruz",
+      "secondSurname": "Jiménez",
+      "email": "claritarsj@gmail.com",
+      "phone": "689223797",
+      "curso": "dw"
+    },
+    {
+      "id": "ab08",
+      "name": "Clara",
+      "surname": "Ruiz-Santacruz",
+      "secondSurname": "Jiménez",
+      "email": "claritarsj@gmail.com",
+      "phone": "689223797",
+      "curso": "4"
     }
   ]
 }
