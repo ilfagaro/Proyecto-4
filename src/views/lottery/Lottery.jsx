@@ -31,6 +31,15 @@ function Lottery({ showDeleteButton }) {
     }
   };
 
+    // Función para manejar la eliminación de un usuario
+    const deleteUser = (userId) => {
+        // Crear una nueva lista de usuarios excluyendo el usuario con el ID especificado
+        const deletedUser = selectedUser.filter(user => user.id !== userId);
+        
+        // Actualizar el estado con la nueva lista de usuarios
+        setSelectedUser(deletedUser);
+      };
+
   return (
     <div>
       <Container className="mb-5">
@@ -44,7 +53,8 @@ function Lottery({ showDeleteButton }) {
       <TableLottery
         lotteryUser={selectedUser}
         onStartLottery={startLottery}
-        showDeleteButton={false}/>
+        showDeleteButton={false}
+        onDeleteUser={deleteUser}/>
       <Footer />
     </div>
   );

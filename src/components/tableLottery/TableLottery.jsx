@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-function TableLottery({ lotteryUser, startLottery }) {
+function TableLottery({ lotteryUser, startLottery,onDeleteUser }) {
   return (
     <Container>
       <div className="tableLottery p-3">
@@ -30,7 +30,11 @@ function TableLottery({ lotteryUser, startLottery }) {
                 <td>{user.email}</td>
                 <td>{user.phone}</td>
                 <td>{user.curso}</td>
-                
+                <td>
+                  <button 
+                  className="buttonDelete" onClick={() => onDeleteUser(user.id)}>
+                  </button>
+                </td>
               </tr>
             ))}
           </tbody>
