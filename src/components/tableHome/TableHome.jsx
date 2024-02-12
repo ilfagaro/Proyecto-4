@@ -26,7 +26,7 @@ function TableHome ({onAddUser,showDeleteButton}) {
     return (
       <Container >
       <div className='tableHome p-3'>
-        <Table  className = 'table-default rounded-2 ' >
+        <Table  responsive className = 'table-default rounded-2 ' >
           <thead>
           <tr >
             <th >Nombre</th>

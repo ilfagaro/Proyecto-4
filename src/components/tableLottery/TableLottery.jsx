@@ -8,7 +8,7 @@ function TableLottery({ lotteryUser, onStartLottery, onDeleteUser, winner }) {
   return (
     <Container>
       <div className="tableLottery p-3">
-        <Table className="table-default rounded-2 ">
+        <Table responsive className="table-default rounded-2 ">
           <thead className="tableLottery-header">
             <tr>
               <th>Nombre</th>
@@ -24,15 +24,15 @@ function TableLottery({ lotteryUser, onStartLottery, onDeleteUser, winner }) {
           <tbody>
             {lotteryUser.map((user) => (
               <tr key={user.id}>
-                <td>{user.name}</td>
-                <td>{user.surname}</td>
-                <td>{user.secondSurname}</td>
-                <td>{user.email}</td>
-                <td>{user.phone}</td>
-                <td>{user.curso}</td>
-                <td>
-                  <button
-                    className="buttonDelete" onClick={() => onDeleteUser(user.id)}>
+                <td id="user-name">{user.name}</td>
+                <td id="user-surname">{user.surname}</td>
+                <td id="user-secondSurname">{user.secondSurname}</td>
+                <td id="user-email">{user.email}</td>
+                <td id="user-phone">{user.phone}</td>
+                <td id="user-curso">{user.curso}</td>
+                <td id="buttonDeleteLottery">
+                  <button 
+                    className="buttonDelete"  onClick={() => onDeleteUser(user.id)}>
                   </button>
                 </td>
               </tr>
@@ -44,7 +44,7 @@ function TableLottery({ lotteryUser, onStartLottery, onDeleteUser, winner }) {
       <div className="card-container">
         <Card className="main-card">
           <Card.Body className="card-body">
-            <Button className="button-start-lottery" onClick={onStartLottery}>
+            <Button responsive className="button-start-lottery" onClick={onStartLottery}>
               Comenzar sorteo
             </Button>
             <Card.Text className="card-text">¡y el ganador/a es..!</Card.Text>
