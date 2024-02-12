@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-function TableLottery({ lotteryUser, startLottery,onDeleteUser }) {
+function TableLottery({ lotteryUser, onStartLottery, onDeleteUser, winner }) {
   return (
     <Container>
       <div className="tableLottery p-3">
@@ -31,8 +31,8 @@ function TableLottery({ lotteryUser, startLottery,onDeleteUser }) {
                 <td>{user.phone}</td>
                 <td>{user.curso}</td>
                 <td>
-                  <button 
-                  className="buttonDelete" onClick={() => onDeleteUser(user.id)}>
+                  <button
+                    className="buttonDelete" onClick={() => onDeleteUser(user.id)}>
                   </button>
                 </td>
               </tr>
@@ -44,12 +44,14 @@ function TableLottery({ lotteryUser, startLottery,onDeleteUser }) {
       <div className="card-container">
         <Card className="main-card">
           <Card.Body className="card-body">
-            <Button className="button-start-lottery" onClick={startLottery}>
+            <Button className="button-start-lottery" onClick={onStartLottery}>
               Comenzar sorteo
             </Button>
             <Card.Text className="card-text">¡y el ganador/a es..!</Card.Text>
             <Card className="inner-card">
-              <p className="winner-name-container">{}</p>
+              <p className="winner-name-container">
+                {winner ? `${winner.name} ${winner.surname}` : ''}
+              </p>
             </Card>
           </Card.Body>
         </Card>

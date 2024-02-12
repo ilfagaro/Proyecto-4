@@ -54,7 +54,8 @@ function Lottery({ showDeleteButton }) {
         lotteryUser={selectedUser}
         onStartLottery={startLottery}
         showDeleteButton={false}
-        onDeleteUser={deleteUser}/>
+        onDeleteUser={deleteUser}
+        winner={winner}/>
       <Footer />
     </div>
   );
