@@ -4,6 +4,9 @@
  Se desarrolla una interfaz en la que se elija un candidato al azar entre una lista de participantes.
  Este proyecto se desarrolla en colaboración con una institución educativa y tiene como objetivo principal la implementación de una vista de sorteo llamada "Wheel of Doom". Esta vista se utilizará de manera lúdica durante clases o reuniones para asignar tareas desafiantes a los participantes.
 
+## Estado del Proyecto
+El proyecto está en fase de producción
+
 # Funcionalidades Principales
  Inicio de Sesión:
 
@@ -11,9 +14,9 @@
  Vista Home:
 
  ## Administrador de Listas
-(Añadir, obtener, modificar y eliminar registros de miembros.)
-Validaciones en el formulario.
-Avisos con Sweet Alert.
+- Añadir, obtener, modificar y eliminar registros de miembros.
+- Validaciones en el formulario.
+- Avisos con Sweet Alert.
 
 ## Wheel of Doom
 - Obtener datos de los miembros.
@@ -40,6 +43,8 @@ Avisos con Sweet Alert.
 - La aplicación es responsive para adaptarse a dispositivos de escritorio y móviles.
 
 ## Miembros:
+Clara
+Faby
 - https://github.com/Yamila17
 - https://github.com/carovasq
 
