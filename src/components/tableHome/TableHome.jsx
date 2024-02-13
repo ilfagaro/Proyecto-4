@@ -24,8 +24,8 @@ function TableHome ({onAddUser,showDeleteButton}) {
 
   return (
     <Container>
-      <div className="tableHome p-3 table-responsive">
-        <Table className="table-default table-hover rounded-2">
+      <div className="tableHome p-3">
+        <Table responsive className="table-default table-hover rounded-2">
           <thead>
             <tr>
               <th>Nombre</th>

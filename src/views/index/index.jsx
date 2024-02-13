@@ -100,7 +100,7 @@ function Index() {
               <img src="/src/images/slytherin2.png" alt="" />
             </figure>
             <figure>
-              <img src="/src/images/hogwarts2.png" alt="" />
+              <img src="/src/images/hufflepuff2.png" alt="" />
             </figure>
           </Col>
         </Card>
