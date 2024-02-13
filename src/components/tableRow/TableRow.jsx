@@ -18,7 +18,7 @@ function TableRow({ user, onChange, showDeleteButton, onAddUser }) {
       <td>{user.email}</td>
       <td>{user.phone}</td>
       <td>{user.curso}</td>
-      {/*Se pone una props showDeleteButton que dice si esta a true muestra boton de borrar y si esta a false muestra boton 
+      {/*Se pone una props showDeleteButton que dice si esta a true muestra boton de borrar, y si esta a false muestra boton 
             de agregar */}
       {showDeleteButton ? (
         <td>
