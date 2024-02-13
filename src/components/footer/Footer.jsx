@@ -1,32 +1,35 @@
 import React, { useState } from "react";
 import "./footer.css";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function Footer() {
   return (
-    <footer class="footerHome mb-2">
-      <div class="container col-sm-12">
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-2 col-sm-6 mt-2 d-flex justify-content-center ">
+    <footer >
+      <Container responsive  >
+        <Row >
+          <Col className="d-flex justify-content-center ">
             <img class="logo" src="/src/images/gryffindor.png" />
-          </div>
-          <div class="col-md-2 col-sm-6 mt-2 d-flex justify-content-center ">
-            <img class="logo" src="/src/images/ravenclaw.png" />
-          </div>
-          <div class="col-md-2 col-sm-6 mt-2 d-flex justify-content-center ">
-            <img class="logo" src="/src/images/slytherin.png" />
-          </div>
-          <div class="col-md-2 col-sm-6 mt-2 d-flex justify-content-center">
+          </Col>
+          <Col className="d-flex justify-content-center">
             <img class="logo" src="/src/images/hufflepuff.png" />
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col mt-3 d-flex justify-content-center">
+          </Col>
+          <Col className="d-flex justify-content-center">
+            <img class="logo" src="/src/images/slytherin.png" />
+          </Col>
+          <Col className="d-flex justify-content-center">
+            <img class="logo" src="/src/images/ravenclaw.png" />
+          </Col>
+        </Row>
+        <Container>
+          <Row>
+            <Col className="d-flex justify-content-center mt-3">
               <p>© 2024 CodeCrafters Consulting</p>
-            </div>
-          </div>
-        </div>
-      </div>
+            </Col>
+          </Row>
+        </Container>
+      </Container>
     </footer>
   );
 }

@@ -8,31 +8,37 @@
 #user-name{
   background-color:#DFEFE7;
   color: #022332;
+  border-color :#022332;
 }
 
 #user-surname{
   background-color:#DFEFE7;
   color: #022332;
+  border-color :#022332;
 }
 
 #user-secondSurname{
   background-color:#DFEFE7;
   color: #022332;
+  border-color :#022332;
 }
 
 #user-email{
   background-color:#DFEFE7;
   color: #022332;
+  border-color :#022332;
 }
 
 #user-phone{
   background-color:#DFEFE7;
   color: #022332;
+  border-color :#022332;
 }
 
 #user-curso{
   background-color:#DFEFE7;
   color: #022332;
+  border-color :#022332;
 }
 
 .table-lottery-users{
@@ -51,6 +57,7 @@
 .tableLottery-header{
     --bs-table-bg: #DFEFE7;
     --bs-table-color: #022332;
+    border-color :#022332;
 }
 
 
@@ -118,6 +125,7 @@
 
 #buttonDeleteLottery{
   background-color:#DFEFE7;
+  border-color :#022332;
 }
 
   
