@@ -1,4 +1,5 @@
 # Proyecto-4
+
 # La Wheel of Doom del cole
 
  Se desarrolla una interfaz en la que se elija un candidato al azar entre una lista de participantes.
@@ -43,16 +44,7 @@ El proyecto está en fase de producción
 - La aplicación es responsive para adaptarse a dispositivos de escritorio y móviles.
 
 ## Miembros:
-Clara
-Faby
 - https://github.com/Yamila17
 - https://github.com/carovasq
 
 ¡Contribuciones y sugerencias son bienvenidas para mejorar este proyecto!
-
-
-
-
-
-
-
