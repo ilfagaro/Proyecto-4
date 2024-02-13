@@ -62,6 +62,24 @@
       "email": "asd@gmail.com",
       "phone": "123123123",
       "curso": "asd"
+    },
+    {
+      "id": "65f8",
+      "name": "Clara",
+      "surname": "Ruiz-Santacruz",
+      "secondSurname": "Jiménez",
+      "email": "claritarsj@gmail.com",
+      "phone": "689223797",
+      "curso": "c"
+    },
+    {
+      "id": "b9ca",
+      "name": "Clara",
+      "surname": "Ruiz Santacruz",
+      "secondSurname": "Jiménez",
+      "email": "claritarsj@gmail.com",
+      "phone": "689223797",
+      "curso": "c"
     }
   ]
 }
