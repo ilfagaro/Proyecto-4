@@ -31,6 +31,17 @@ export default function FormHome() {
       formData.phone &&
       formData.curso
     ) {
+      const inputsWithPattern = document.querySelectorAll('input[pattern]');
+
+      for (let input of inputsWithPattern) {
+        const pattern = new RegExp(input.getAttribute('pattern'));
+        if (!pattern.test(input.value)) {
+          Swal.fire(
+            `Por favor, cumpla las condiciones de ${input.getAttribute("name")}`
+          );
+          return;
+        }
+      }
       Swal.fire("Enviando");
       userService.createUser(formData);
     } else {

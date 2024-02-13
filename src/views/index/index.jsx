@@ -31,69 +31,82 @@ function Index() {
 
   return (
     <div className="content">
-      <Container className='d-flex justify-content-center '>
+      <Container className="d-flex justify-content-center">
+        <Card className="cardCustom col-lg-5 col-md-8 col-sm-8 col-10">
+          <img
+            className="my-5 logoPrincipalWhite"
+            src="/src/images/hogwarts2.png"
+            alt=""
+          />
 
-        <Card className='cardCustom '>
-          <img className='mt-5 mb-5 w-25' src="/src/images/hogwarts2.png" alt="" />
-          
-          <Col md={10} xs={11} lg={11} >
-            <Col className='d-flex justify-content-center'>
-              <Form className='w-75' noValidate validated={validated} onSubmit={handleSubmit}>
-
-                <Form.Group className="mb-3" controlId="formBasicEmail validationCustomEmail">
-                  <Form.Label className='text-white' id='email'>Email address</Form.Label>
-                  <Form.Control 
-                  hasValidation 
-                  required 
-                  type="email" 
-                  placeholder="Enter email" 
-                  aria-describedby='email' />
+          <Col md={10} xs={11} lg={11}>
+            <Col className="d-flex justify-content-center">
+              <Form
+                className="w-75"
+                noValidate
+                validated={validated}
+                onSubmit={handleSubmit}
+              >
+                <Form.Group
+                  className="mb-3"
+                  controlId="formBasicEmail validationCustomEmail"
+                >
+                  <Form.Label className="text-white" id="email">
+                    Email address
+                  </Form.Label>
+                  <Form.Control
+                    hasValidation
+                    required
+                    type="email"
+                    placeholder="Enter email"
+                    aria-describedby="email"
+                  />
                   <Form.Control.Feedback type="invalid">
                     Please choose a email address.
                   </Form.Control.Feedback>
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword validationCustomPassword">
-                  <Form.Label className='text-white'>Password</Form.Label>
-                  <Form.Control  
-                  required 
-                  type="password" 
-                  placeholder="Password" />
+                <Form.Group
+                  className="mb-3"
+                  controlId="formBasicPassword validationCustomPassword"
+                >
+                  <Form.Label className="text-white">Password</Form.Label>
+                  <Form.Control
+                    required
+                    type="password"
+                    placeholder="Password"
+                  />
                   <Form.Control.Feedback type="invalid">
                     Please provide a password.
                   </Form.Control.Feedback>
                 </Form.Group>
 
-                <Button className='mt-4 btnAccess' type="submit" >Acceso</Button>
-
+                <Button className="mt-4 btnAccess" type="submit">
+                  Acceso
+                </Button>
               </Form>
             </Col>
-
           </Col>
 
-          <Col md={4} xs={4} lg={4} >
-            <section className='flagsHouse'>
-              <figure>
-                <img src="/src/images/gryffindor2.png" alt="" />
-              </figure>
-              <figure>
-                <img src="/src/images/ravenclaw2.png" alt="" />
-              </figure>
-              <figure>
-                <img src="/src/images/slytherin2.png" alt="" />
-              </figure>
-              <figure>
-                <img src="/src/images/hogwarts2.png" alt="" />
-              </figure>
-            </section>
-
+          <Col className="flagsHouse mx-4"
+          >
+            <figure>
+              <img src="/src/images/gryffindor2.png" alt="" />
+            </figure>
+            <figure>
+              <img src="/src/images/ravenclaw2.png" alt="" />
+            </figure>
+            <figure>
+              <img src="/src/images/slytherin2.png" alt="" />
+            </figure>
+            <figure>
+              <img src="/src/images/hogwarts2.png" alt="" />
+            </figure>
           </Col>
         </Card>
-
       </Container>
-
     </div>
-  )
+  );
 }
 
 export default Index;
