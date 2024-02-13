@@ -15,3 +15,8 @@
     padding:  0;
     /* Agrega otros estilos si es necesario */
   }
+
+tr nth-child(even){
+  background-color: #ade0f7;
+  color: #022332;
+}
