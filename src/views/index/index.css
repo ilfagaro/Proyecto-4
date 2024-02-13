@@ -1,6 +1,10 @@
 *{
     font-family: 'Josefin Sans', sans-serif;
 }
+.logoPrincipalWhite{
+  width: 152px;
+  height: auto;
+}
 p{
     font-size: 16px;
 }
@@ -12,7 +16,7 @@ p{
    
   }
 .cardCustom{
-    width: 41%;
+    /* width: 41%; */
     height: auto;
     background-color: #022332;
     opacity: 0.9;
@@ -26,17 +30,13 @@ p{
     border-radius: 23px;
 }
 .btnAccess{
-    width: 200px;
+    width: 75%;
     height: 50px;
     font-size: 20px;
     background-color: #229A9B;
     border-radius: 4px;
     border: none;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3px;
 }
 
 .btnAccess:hover{
@@ -46,16 +46,19 @@ p{
     animation: shake 0.6s infinite;
 }
 .flagsHouse img{
-    width: 54.06px;
+    width: auto;
     height: 67px;
     margin:0;
 }
 
 .flagsHouse{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 70px;
     margin-bottom: 48.5px;
+    gap:15px;
+
 }
 
 @keyframes shake {

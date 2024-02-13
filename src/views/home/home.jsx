@@ -14,24 +14,24 @@ function Home() {
   const navigate = useNavigate();
 
   return (
-    <div  className='contentView2'>
+    <div className="contentView2">
       <Header />
-      <Container>
+      <Container className="col-xl-9 col-lg-10 col-sm-11 col-11">
         <Row>
           <Col md={12}>
             <FormHome />
           </Col>
         </Row>
         <TableHome showDeleteButton={true} />
-        <button 
-            className='mt-2 mx-auto btnAccess' 
-            onClick={() => navigate('/lottery')}>
-              Accede al Sorteo !!
+        <button
+          className="my-5 mx-auto btnAccesslottery"
+          onClick={() => navigate("/lottery")}
+        >
+          Accede al Sorteo !!
         </button>
       </Container>
       <Footer />
     </div>
-
   );
 }
 export default Home
