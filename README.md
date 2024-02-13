@@ -44,8 +44,9 @@ El proyecto está en fase de producción
 - La aplicación es responsive para adaptarse a dispositivos de escritorio y móviles.
 
 ## Miembros:
-- https://github.com/Clara-RuizSantacruz
-- https://github.com/Yamila17
-- https://github.com/carovasq
+- [Clara](https://github.com/Clara-RuizSantacruz "github de Clara")
+- [Yamila](https://github.com/Yamila17 "github de Yamila")
+- [Carolay](https://github.com/carovasq "Github de Carolay")
+- [Faby](https://github.com/ilfagaro "Github de Faby")
 
 ¡Contribuciones y sugerencias son bienvenidas para mejorar este proyecto!
