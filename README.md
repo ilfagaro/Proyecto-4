@@ -1,4 +1,5 @@
 # Proyecto-4
+![image](https://github.com/ilfagaro/Proyecto-4/assets/140159606/a3bf717b-99dd-47f3-a34a-77cad15ae186)
 
 # La Wheel of Doom del cole
 
