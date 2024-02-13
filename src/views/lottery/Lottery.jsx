@@ -8,7 +8,7 @@ import Header from "../../components/header/Header";
 import Container from "react-bootstrap/Container";
 import Col from 'react-bootstrap/Col';
 
-function Lottery({ showDeleteButton }) {
+function Lottery() {
   // Estado para almacenar los usuarios seleccionados para el sorteo
   const [selectedUser, setSelectedUser] = useState([]);
 
@@ -53,7 +53,6 @@ function Lottery({ showDeleteButton }) {
       <TableLottery
         lotteryUser={selectedUser}
         onStartLottery={startLottery}
-        showDeleteButton={false}
         onDeleteUser={deleteUser}
         winner={winner}/>
       <Footer />
